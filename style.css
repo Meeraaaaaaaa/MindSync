@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #b3e5fc, #81d4fa, #4fc3f7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  width: 95%;
+}
+
+h1 {
+  color: #0288d1;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.menu button {
+  margin: 0 10px;
+  padding: 10px 15px;
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background-color: #0277bd;
+}
+
+.section {
+  display: none;
+}
+
+label, textarea, input {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+}
+
+select, textarea, input[type="text"], input[type="date"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0277bd;
+}
+
+.affirmation {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #00695c;
+  font-style: italic;
+}
+
+.log {
+  margin-top: 20px;
+  background-color: #f1f8e9;
+  padding: 15px;
+  border-radius: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  text-align: left;
+  font-size: 14px;
+}
+
+#goalList {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  margin-top: 15px;
+}
+
+#goalList li {
+  margin: 10px 0;
+  background: #e0f7fa;
+  padding: 10px;
+  border-radius: 8px;
+}
+
