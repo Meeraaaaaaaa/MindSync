@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MoodMate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>MindSync</h1>
+
+    <div class="menu">
+      <button onclick="switchMode('mood')">Mood Tracker</button>
+      <button onclick="switchMode('journal')">Journal</button>
+      <button onclick="switchMode('goals')">To-do</button>
+    </div>
+
+    <!-- Mood Tracker Section -->
+    <div class="section" id="moodSection">
+      <label for="mood">How are you feeling today?</label>
+      <select id="mood">
+        <option value="" disabled selected>Select your mood</option>
+        <option>😊 Extremely Happy</option>
+        <option>🙂 Happy</option>
+        <option>😐 Ok</option>
+        <option>🙁 Sad</option>
+        <option>😢 Extremely Sad</option>
+      </select>
+      <button id="submitMoodBtn">Submit Mood</button>
+      <button id="viewLogBtn">View Mood Log</button>
+      <div class="affirmation" id="affirmation"></div>
+      <div class="log" id="moodLog"></div>
+    </div>
+
+    <!-- Journal Section -->
+    <div class="section" id="journalSection" style="display: none;">
+      <textarea id="journalEntry" rows="6" placeholder="Write your thoughts here..."></textarea>
+      <button onclick="saveJournal()">Save Entry</button>
+      <div class="log" id="journalLog"></div>
+    </div>
+
+    <!-- Goals Section -->
+    <div class="section" id="goalsSection" style="display: none;">
+      <input type="text" id="goalText" placeholder="Your goal..." />
+      <input type="date" id="goalDate" />
+      <button onclick="addGoal()">Add Goal</button>
+      <ul id="goalList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
